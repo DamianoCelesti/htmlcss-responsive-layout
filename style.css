@@ -61,6 +61,10 @@ header h1 {
     width: 100%;
 
 }
+.info ul {
+    list-style: none;
+    padding-top: 20px;
+}
 
 .invi {
     display: none;
@@ -197,15 +201,19 @@ footer {
     }
 
     .invi {
-        display: inline-block;
+        display: inline;
     }
     
-    
-    .info {
+    .info ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
+
     }
+    .info li {
+        width: calc(100% / 3);
+    }
+    
 }
 
 
