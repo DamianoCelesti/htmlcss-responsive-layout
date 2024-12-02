@@ -61,6 +61,7 @@ header h1 {
     width: 100%;
 
 }
+
 .info ul {
     list-style: none;
     padding-top: 20px;
@@ -203,23 +204,62 @@ footer {
     .invi {
         display: inline;
     }
-    
+
     .info ul {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
 
     }
+
     .info li {
         width: calc(100% / 3);
     }
-    
+
 }
 
 
 
 /* versione pc */
 
-/* @media screen and (min-width:992px) {
-    
-} 
+@media screen and (min-width:992px) {
+    .container {
+        width: 70%;
+        margin: 15px auto;
+    }
+
+    .container-info {
+        flex-wrap: nowrap;
+    }
+
+    .bottone {
+        padding: 7px 25px;
+    }
+
+    .social span {
+        display: inline-block;
+    }
+    .info {
+        width: 60%;
+    }
+    .info ul {
+        display: block;
+    }
+    .info li {
+        width: auto;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    .bolean {
+        text-align: left;
+        margin: 0;
+    }
+    .nav-list ul {
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+    }
+}
