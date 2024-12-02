@@ -40,9 +40,17 @@ header h1 {
 }
 .container img {
     width: 100%;
+    display: block;
 }
 
-
+.container-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+.info {
+    padding: 3%;
+    background-color: white;
+}
 
 /* footer */
 
