@@ -8,6 +8,12 @@ body {
     background-color: lightgray;
 }
 
+.clear-fix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
 /* header */
 
 
@@ -37,6 +43,7 @@ header h1 {
     /* background-color: blue;
     height: 400px; */
 }
+
 .container-info img {
     width: 100%;
     display: block;
@@ -45,13 +52,18 @@ header h1 {
 .container-info {
     display: flex;
     flex-wrap: wrap;
-    
+
 }
+
 .info {
     padding: 3%;
     background-color: white;
     width: 100%;
 
+}
+
+.invi {
+    display: none;
 }
 
 
@@ -70,35 +82,39 @@ header h1 {
 .container-banner img {
     width: 100%;
 }
-.container-banner{
+
+.container-banner {
     display: none;
 }
+
 /* social */
 .social {
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
 }
+
 .social span {
     display: none;
 }
-.fa-facebook{
+
+.fa-facebook {
     color: #1775f0;
 }
 
-.fa-twitter{
+.fa-twitter {
     color: #009eff;
 }
 
-.fa-instagram{
+.fa-instagram {
     color: #db4179;
 }
 
-.fa-pinterest{
+.fa-pinterest {
     color: #e92525;
 }
 
-.fa-youtube{
+.fa-youtube {
     color: #e22020;
 }
 
@@ -115,16 +131,82 @@ header h1 {
 
 footer {
     background-color: blueviolet;
+    padding: 30px;
+    /* height: 150px; */
+}
 
-    height: 150px;
+.bolean {
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.via {
+    text-align: center;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list ul {
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
+.nav a {
+    color: white;
+    padding: 0 10px;
+}
+
 /* versione tablet */
 
-/* @media screen and (min-width:768px) {
+@media screen and (min-width:768px) {
+    header {
+        justify-content: left;
+    }
+
+    .container {
+        width: 85%;
+        margin: 15px auto;
+    }
+
+    .container-img {
+        width: 100%;
+    }
+
+    .container-banner {
+        display: block;
+    }
+
+    .bottone {
+        padding: 10px 55px;
+    }
+
+    .prese-img img {
+        float: left;
+        padding: 10px 5px;
+        width: 40%;
+    }
+
+    .invi {
+        display: inline-block;
+    }
     
-} */
+    
+    .info {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
 
 
 
@@ -132,4 +214,4 @@ footer {
 
 /* @media screen and (min-width:992px) {
     
-} */
+} 
