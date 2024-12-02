@@ -17,6 +17,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 header h1 {
@@ -34,10 +35,12 @@ header h1 {
     width: 95%;
     margin: 15px auto;
 
-    background-color: blue;
-    height: 400px;
+    /* background-color: blue;
+    height: 400px; */
 }
-
+.container img {
+    width: 100%;
+}
 
 
 
@@ -53,14 +56,14 @@ footer {
 
 /* versione tablet */
 
-@media screen and (min-width:768px) {
+/* @media screen and (min-width:768px) {
     
-}
+} */
 
 
 
 /* versione pc */
 
-@media screen and (min-width:992px) {
+/* @media screen and (min-width:992px) {
     
-}
+} */
