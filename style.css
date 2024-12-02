@@ -17,7 +17,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 header h1 {
@@ -32,13 +31,13 @@ header h1 {
 /* main */
 
 .container {
-    width: 95%;
+    width: 90%;
     margin: 15px auto;
 
     /* background-color: blue;
     height: 400px; */
 }
-.container img {
+.container-info img {
     width: 100%;
     display: block;
 }
@@ -46,10 +45,69 @@ header h1 {
 .container-info {
     display: flex;
     flex-wrap: wrap;
+    
 }
 .info {
     padding: 3%;
     background-color: white;
+    width: 100%;
+
+}
+
+
+/* bottoni */
+.bottone {
+    background-color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 10px 15px;
+}
+
+
+
+
+/*banner */
+.container-banner img {
+    width: 100%;
+}
+.container-banner{
+    display: none;
+}
+/* social */
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.social span {
+    display: none;
+}
+.fa-facebook{
+    color: #1775f0;
+}
+
+.fa-twitter{
+    color: #009eff;
+}
+
+.fa-instagram{
+    color: #db4179;
+}
+
+.fa-pinterest{
+    color: #e92525;
+}
+
+.fa-youtube{
+    color: #e22020;
+}
+
+
+
+/* presentation */
+.prese-img img {
+    width: 100%;
+    padding: 0 20%;
 }
 
 /* footer */
